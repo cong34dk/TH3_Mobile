@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MENU KFC"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbCanhGaRan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cánh gà rán - 89.000 (VNĐ)" />
+
+        <RadioButton
+            android:id="@+id/rbDuiGaRan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đùi gà rán - 92.000 (VNĐ)" />
+
+        <RadioButton
+            android:id="@+id/rbCombo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Combo -156.000 (VNĐ)" />
+
+        <RadioButton
+            android:id="@+id/rbThucAnPhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thức ăn phụ - 34.000 (VNĐ)" />
+    </RadioGroup>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btOK"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="TongTien"
+            android:text="Đặt hàng" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvTong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tổng tiền: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+</TableLayout>

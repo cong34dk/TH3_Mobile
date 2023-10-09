@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TH3_Bai4">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU Thanh Toán"
+            android:textSize="30dp"></TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Món"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textSize="25dp"></TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkCoffe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffe(1800)"></CheckBox>
+
+        <EditText
+            android:id="@+id/txtCoffe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            ></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkChe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chè thập cẩm(12000)"></CheckBox>
+
+        <EditText
+            android:id="@+id/txtChe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+            ></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkKem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kem tươi(10000)"></CheckBox>
+
+        <EditText
+            android:id="@+id/txtKem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            ></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkBim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BimBim(5000)"></CheckBox>
+
+        <EditText
+            android:id="@+id/txtBim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            ></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sữa chua(6000)"></CheckBox>
+
+        <EditText
+            android:id="@+id/txtSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnDatHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt Hàng"
+            android:textSize="25dp"
+            android:textStyle="bold"></Button>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tvTong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="BackButton"
+            android:text="Back"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNextButton"
+            android:text="Next"
+            android:textStyle="bold"></Button>
+
+    </TableRow>
+
+</TableLayout>
